@@ -7,7 +7,7 @@ app = FastAPI()
 def home():
   return {"status": "Bot prendido"}
 
-@app.post("/webhook)
+@app.post("/webhook")
           async def webhook(req: Request):
           data = await req.json()
           print(data)
