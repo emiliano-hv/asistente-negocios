@@ -8,10 +8,10 @@ def home():
   return {"status": "Bot prendido"}
 
 @app.post("/webhook")
-          async def webhook(req: Request):
-          data = await req.json()
-          print(data)
-          return {"ok": True}
+async def webhook(req: Request):
+    data = await req.json()
+    print(data)
+    return {"ok": True}
 
 if __name__ == "__main__":
           import uvicorn
